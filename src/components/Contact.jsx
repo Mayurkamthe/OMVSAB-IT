@@ -54,10 +54,10 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="contact" className="py-14 sm:py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-10 sm:mb-14">
           <div className="inline-block text-primary font-semibold text-sm uppercase tracking-widest mb-3">
             Contact Us
           </div>
@@ -70,7 +70,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-5 gap-12">
+        <div className="grid lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Contact Info */}
           <div className="lg:col-span-2 space-y-5">
             {contactInfo.map((c) => (

@@ -9,10 +9,10 @@ export default function Placement() {
   ];
 
   return (
-    <section id="placement" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="placement" className="py-14 sm:py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-10 sm:mb-14">
           <div className="inline-block text-primary font-semibold text-sm uppercase tracking-widest mb-3">
             Placement Success
           </div>
@@ -26,7 +26,7 @@ export default function Placement() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-10 sm:mb-14">
           {stats.map((s) => (
             <div key={s.label} className="text-center bg-gray-50 rounded-xl p-7 border border-gray-100">
               <div className="font-heading font-bold text-3xl text-primary mb-2">{s.value}</div>

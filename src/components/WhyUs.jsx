@@ -45,10 +45,10 @@ export default function WhyUs() {
   ];
 
   return (
-    <section id="why" className="py-20 bg-secondary">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="why" className="py-14 sm:py-20 bg-secondary">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-10 sm:mb-14">
           <div className="inline-block text-primary font-semibold text-sm uppercase tracking-widest mb-3">
             Why OMVSAB
           </div>

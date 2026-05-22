@@ -40,10 +40,10 @@ export default function Internship() {
   ];
 
   return (
-    <section id="internship" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="internship" className="py-14 sm:py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-10 sm:mb-14">
           <div className="inline-block text-primary font-semibold text-sm uppercase tracking-widest mb-3">
             Internship Program
           </div>
@@ -56,7 +56,7 @@ export default function Internship() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Features */}
           <div className="grid sm:grid-cols-2 gap-5">
             {features.map((f) => (

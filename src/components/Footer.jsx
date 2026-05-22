@@ -15,7 +15,7 @@ export default function Footer() {
   return (
     <footer className="bg-secondary text-white">
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-6 py-14">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-14">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
@@ -113,7 +113,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-white border-opacity-10">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-gray-500 text-xs">
             © {new Date().getFullYear()} OMVSAB IT Solutions. All rights reserved.
           </p>
