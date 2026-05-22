@@ -43,8 +43,8 @@ export default function Contact() {
         </svg>
       ),
       label: "Office",
-      value: contact.location,
-      href: null,
+      value: contact.address,
+      href: contact.mapsUrl,
     },
     {
       icon: (
@@ -95,19 +95,26 @@ export default function Contact() {
               </div>
             ))}
 
-            {/* Map Placeholder */}
-            <div className="mt-6 rounded-xl overflow-hidden border border-gray-100 h-48 bg-gray-100 flex items-center justify-center">
-              <div className="text-center">
-                <svg className="w-8 h-8 text-gray-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                </svg>
-                <p className="text-gray-500 text-xs">{contact.location}</p>
-                <a href="https://maps.google.com" target="_blank" rel="noreferrer"
-                  className="text-primary text-xs font-medium hover:underline mt-1 inline-block">
-                  View on Google Maps →
-                </a>
-              </div>
+            {/* Google Maps Embed */}
+            <div className="mt-6 rounded-xl overflow-hidden border border-gray-100 h-52">
+              <iframe
+                title="OMVSAB IT Solutions Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.0!2d73.8200!3d18.4870!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfdc61d31357%3A0xfc71712ef2ff069b!2sOmvsab%20IT%20Solution!5e0!3m2!1sen!2sin!4v1700000000000"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
+            <a href={contact.mapsUrl} target="_blank" rel="noreferrer"
+              className="inline-flex items-center gap-1.5 text-primary text-xs font-medium hover:underline mt-3">
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              Open in Google Maps
+            </a>
           </div>
 
           {/* Contact Form */}

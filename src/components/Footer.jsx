@@ -69,7 +69,10 @@ export default function Footer() {
                 <svg className="w-4 h-4 text-primary mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 </svg>
-                <span className="text-gray-400 text-sm">{contact.location}</span>
+                <a href={contact.mapsUrl} target="_blank" rel="noreferrer"
+                  className="text-gray-400 text-sm hover:text-primary transition-colors leading-snug">
+                  {contact.address}
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <svg className="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
