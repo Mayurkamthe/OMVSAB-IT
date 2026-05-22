@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import logo from "../assets/logo.png";
 
 export default function Hero() {
   const [visible, setVisible] = useState(false);
@@ -80,10 +81,8 @@ export default function Hero() {
                 <div className="absolute bottom-0 left-0 w-32 h-32 bg-primary opacity-10 rounded-full translate-y-10 -translate-x-10" />
 
                 <div className="relative z-10">
-                  <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-6">
-                    <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                    </svg>
+                  <div className="w-16 h-16 flex items-center justify-center mb-6">
+                    <img src={logo} alt="OMVSAB IT Solutions" className="w-full h-full object-contain" />
                   </div>
                   <h3 className="font-heading font-bold text-white text-2xl mb-3">Start Your Tech Career</h3>
                   <p className="text-gray-400 text-sm leading-relaxed mb-6">

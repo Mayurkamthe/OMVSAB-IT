@@ -1,3 +1,5 @@
+import logo from "../assets/logo.png";
+
 export default function Footer() {
   const services = [
     "Software Development",
@@ -18,9 +20,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-heading font-bold text-lg">O</span>
-              </div>
+              <img src={logo} alt="OMVSAB IT Solutions" className="h-12 w-auto object-contain" />
               <div>
                 <div className="font-heading font-bold text-white text-lg leading-tight">OMVSAB</div>
                 <div className="text-xs text-gray-400 tracking-wide">IT Solutions</div>
