@@ -1,11 +1,12 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 
-// Compact system prompt to save tokens
-const SYSTEM_PROMPT = `You are OMVA, AI assistant for OMVSAB IT Solutions, Pune.
+// Compact system prompt — contact details pulled from .env at build time
+const SYSTEM_PROMPT = `You are OMVA, AI assistant for OMVSAB IT Solutions.
 Services: Software/Web/Mobile Dev, UI/UX, Cloud, IT Consulting.
 Internship: 3-month tracks (Full Stack, Mobile, Java, UI/UX), live projects, certificates, placement help.
 Placement: 1000+ placed, 92% rate, avg ₹4.5 LPA, top companies: TCS, Infosys, Wipro, Accenture, HCL.
-Stats: 200+ projects, 50+ clients. Contact: +91 98765 43210 | info@omvsab.com | Pune.
+Stats: 200+ projects, 50+ clients.
+Contact: ${process.env.REACT_APP_CONTACT_PHONE} | ${process.env.REACT_APP_CONTACT_EMAIL} | ${process.env.REACT_APP_CONTACT_LOCATION}.
 Rules: Be concise and warm. For pricing/dates direct to team. End with a helpful follow-up offer.`;
 
 const MAX_HISTORY = 6; // last 3 pairs only
@@ -127,7 +128,7 @@ export default function AIChatbot() {
       setMessages(prev => [...prev, { role: "assistant", content: reply }]);
       speak(reply);
     } catch {
-      setMessages(prev => [...prev, { role: "assistant", content: "Oops! Something went wrong. Contact us at info@omvsab.com." }]);
+      setMessages(prev => [...prev, { role: "assistant", content: `Oops! Something went wrong. Contact us at ${process.env.REACT_APP_CONTACT_EMAIL}.` }]);
     } finally {
       setLoading(false);
     }

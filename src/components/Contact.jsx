@@ -1,4 +1,5 @@
 import { useState } from "react";
+import contact from "../config/contact";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
@@ -21,7 +22,8 @@ export default function Contact() {
         </svg>
       ),
       label: "Phone",
-      value: "+91 98765 43210",
+      value: contact.phone,
+      href: `tel:${contact.phoneRaw}`,
     },
     {
       icon: (
@@ -30,7 +32,8 @@ export default function Contact() {
         </svg>
       ),
       label: "Email",
-      value: "info@omvsab.com",
+      value: contact.email,
+      href: `mailto:${contact.email}`,
     },
     {
       icon: (
@@ -40,7 +43,8 @@ export default function Contact() {
         </svg>
       ),
       label: "Office",
-      value: "Pune, Maharashtra, India",
+      value: contact.location,
+      href: null,
     },
     {
       icon: (
@@ -49,14 +53,14 @@ export default function Contact() {
         </svg>
       ),
       label: "Working Hours",
-      value: "Mon–Sat: 9:00 AM – 7:00 PM",
+      value: contact.hours,
+      href: null,
     },
   ];
 
   return (
     <section id="contact" className="py-14 sm:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        {/* Header */}
         <div className="text-center mb-10 sm:mb-14">
           <div className="inline-block text-primary font-semibold text-sm uppercase tracking-widest mb-3">
             Contact Us
@@ -65,7 +69,7 @@ export default function Contact() {
             Get In Touch With Us
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto leading-relaxed">
-            Have a project in mind or want to learn about our internship programs? 
+            Have a project in mind or want to learn about our internship programs?
             We'd love to hear from you.
           </p>
         </div>
@@ -80,7 +84,13 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="text-xs text-gray-400 font-medium uppercase tracking-wide mb-0.5">{c.label}</div>
-                  <div className="text-secondary font-semibold text-sm">{c.value}</div>
+                  {c.href ? (
+                    <a href={c.href} className="text-secondary font-semibold text-sm hover:text-primary transition-colors">
+                      {c.value}
+                    </a>
+                  ) : (
+                    <div className="text-secondary font-semibold text-sm">{c.value}</div>
+                  )}
                 </div>
               </div>
             ))}
@@ -91,8 +101,9 @@ export default function Contact() {
                 <svg className="w-8 h-8 text-gray-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 </svg>
-                <p className="text-gray-500 text-xs">Pune, Maharashtra</p>
-                <a href="https://maps.google.com" target="_blank" rel="noreferrer" className="text-primary text-xs font-medium hover:underline mt-1 inline-block">
+                <p className="text-gray-500 text-xs">{contact.location}</p>
+                <a href="https://maps.google.com" target="_blank" rel="noreferrer"
+                  className="text-primary text-xs font-medium hover:underline mt-1 inline-block">
                   View on Google Maps →
                 </a>
               </div>
@@ -100,7 +111,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="lg:col-span-3 bg-gray-50 rounded-2xl p-8 border border-gray-100">
+          <div className="lg:col-span-3 bg-gray-50 rounded-2xl p-6 sm:p-8 border border-gray-100">
             {submitted ? (
               <div className="h-full flex items-center justify-center">
                 <div className="text-center">
@@ -119,46 +130,26 @@ export default function Contact() {
                 <div className="grid sm:grid-cols-2 gap-4 mb-4">
                   <div>
                     <label className="block text-xs font-medium text-gray-600 mb-1.5">Full Name *</label>
-                    <input
-                      name="name"
-                      value={form.name}
-                      onChange={handleChange}
-                      placeholder="Your full name"
-                      required
-                      className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors bg-white"
-                    />
+                    <input name="name" value={form.name} onChange={handleChange}
+                      placeholder="Your full name" required
+                      className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors bg-white" />
                   </div>
                   <div>
                     <label className="block text-xs font-medium text-gray-600 mb-1.5">Email Address *</label>
-                    <input
-                      name="email"
-                      value={form.email}
-                      onChange={handleChange}
-                      type="email"
-                      placeholder="you@example.com"
-                      required
-                      className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors bg-white"
-                    />
+                    <input name="email" value={form.email} onChange={handleChange}
+                      type="email" placeholder="you@example.com" required
+                      className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors bg-white" />
                   </div>
                   <div>
                     <label className="block text-xs font-medium text-gray-600 mb-1.5">Phone Number</label>
-                    <input
-                      name="phone"
-                      value={form.phone}
-                      onChange={handleChange}
+                    <input name="phone" value={form.phone} onChange={handleChange}
                       placeholder="+91 00000 00000"
-                      className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors bg-white"
-                    />
+                      className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors bg-white" />
                   </div>
                   <div>
                     <label className="block text-xs font-medium text-gray-600 mb-1.5">Subject *</label>
-                    <select
-                      name="subject"
-                      value={form.subject}
-                      onChange={handleChange}
-                      required
-                      className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors bg-white"
-                    >
+                    <select name="subject" value={form.subject} onChange={handleChange} required
+                      className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors bg-white">
                       <option value="">Select a subject</option>
                       <option>Software Development</option>
                       <option>Internship Program</option>
@@ -170,20 +161,12 @@ export default function Contact() {
                 </div>
                 <div className="mb-5">
                   <label className="block text-xs font-medium text-gray-600 mb-1.5">Message *</label>
-                  <textarea
-                    name="message"
-                    value={form.message}
-                    onChange={handleChange}
-                    rows={4}
-                    placeholder="Tell us about your requirements..."
-                    required
-                    className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors bg-white resize-none"
-                  />
+                  <textarea name="message" value={form.message} onChange={handleChange}
+                    rows={4} placeholder="Tell us about your requirements..." required
+                    className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-primary transition-colors bg-white resize-none" />
                 </div>
-                <button
-                  onClick={handleSubmit}
-                  className="w-full bg-primary text-white py-3.5 rounded-lg font-semibold text-sm hover:bg-orange-600 transition-colors"
-                >
+                <button onClick={handleSubmit}
+                  className="w-full bg-primary text-white py-3.5 rounded-lg font-semibold text-sm hover:bg-orange-600 transition-colors">
                   Send Message
                 </button>
               </div>
