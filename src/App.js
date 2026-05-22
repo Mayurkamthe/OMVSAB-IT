@@ -9,6 +9,7 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import AIChatbot from "./components/AIChatbot";
+import EnquiryPopup from "./components/EnquiryPopup";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       </main>
       <Footer />
       <AIChatbot />
+      <EnquiryPopup />
     </div>
   );
 }
