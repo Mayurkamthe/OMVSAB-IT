@@ -1,4 +1,3 @@
-react
 import React, { useState, useRef, useEffect, useCallback } from "react";
 
 // --- SYSTEM PROMPT (White-labeled Identity) ---
