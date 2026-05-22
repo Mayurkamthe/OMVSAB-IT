@@ -175,7 +175,7 @@ export default function EnquiryPopup() {
       />
 
       {/* Modal */}
-      <div className={`fixed z-50 inset-x-3 sm:inset-auto sm:left-1/2 sm:-translate-x-1/2 sm:w-full sm:max-w-lg top-1/2 -translate-y-1/2 bg-white rounded-2xl shadow-2xl transition-all duration-300 ${open ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}`}>
+      <div className={`fixed z-50 inset-x-3 sm:inset-auto sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-full sm:max-w-lg top-1/2 -translate-y-1/2 bg-white rounded-2xl shadow-2xl transition-all duration-300 ${open ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}`}>
 
         {/* Header */}
         <div className="bg-secondary rounded-t-2xl px-6 py-4 flex items-center justify-between">
