@@ -9,7 +9,7 @@ export default function Hero() {
     { value: "1000+", label: "Students Placed" },
     { value: "200+", label: "Projects Delivered" },
     { value: "50+", label: "Corporate Clients" },
-    { value: "5+", label: "Years Experience" },
+    { value: "10+", label: "Projects Live" },
   ];
 
   return (
@@ -34,7 +34,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-gray-500 text-lg leading-relaxed mb-8 max-w-xl">
-              OMVSAB IT Solutions helps students and businesses with modern IT solutions, 
+              OMVSAB IT Solutions helps students and businesses with modern IT solutions,
               live projects, and career-focused internship training that builds real industry skills.
             </p>
 
@@ -76,12 +76,12 @@ export default function Hero() {
             <div className="relative">
               {/* Main Card */}
               <div className="bg-secondary rounded-2xl p-8 lg:p-10 relative overflow-hidden">
-                {/* Background Pattern */}
                 <div className="absolute top-0 right-0 w-48 h-48 bg-primary opacity-10 rounded-full -translate-y-12 translate-x-12" />
                 <div className="absolute bottom-0 left-0 w-32 h-32 bg-primary opacity-10 rounded-full translate-y-10 -translate-x-10" />
 
                 <div className="relative z-10">
-                  <div className="w-16 h-16 flex items-center justify-center mb-6">
+                  {/* Logo — no background */}
+                  <div className="mb-6 w-16 h-16">
                     <img src={logo} alt="OMVSAB IT Solutions" className="w-full h-full object-contain" />
                   </div>
                   <h3 className="font-heading font-bold text-white text-2xl mb-3">Start Your Tech Career</h3>
@@ -89,7 +89,6 @@ export default function Hero() {
                     Join our internship program and work on live industry projects with mentorship from senior professionals.
                   </p>
 
-                  {/* Tech Stack Badges */}
                   <div className="flex flex-wrap gap-2 mb-6">
                     {["React", "Node.js", "Spring Boot", "MongoDB", "AWS", "Flutter"].map((tech) => (
                       <span key={tech} className="bg-white bg-opacity-10 text-white text-xs px-3 py-1.5 rounded-md font-medium">

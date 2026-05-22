@@ -1,3 +1,27 @@
+const GlobeIcon = () => (
+  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9" />
+  </svg>
+);
+
+const PhoneIcon = () => (
+  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+  </svg>
+);
+
+const CodeIcon = () => (
+  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+  </svg>
+);
+
+const BrushIcon = () => (
+  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+  </svg>
+);
+
 export default function Internship() {
   const features = [
     { num: "01", title: "Live Project Training", desc: "Work on real client projects from day one under expert guidance." },
@@ -9,10 +33,10 @@ export default function Internship() {
   ];
 
   const tracks = [
-    { name: "Full Stack Web Development", duration: "3 Months", icon: "🌐" },
-    { name: "Mobile App Development", duration: "3 Months", icon: "📱" },
-    { name: "Java Backend Development", duration: "2 Months", icon: "☕" },
-    { name: "UI/UX Design", duration: "2 Months", icon: "🎨" },
+    { name: "Full Stack Web Development", duration: "3 Months", icon: <GlobeIcon /> },
+    { name: "Mobile App Development", duration: "3 Months", icon: <PhoneIcon /> },
+    { name: "Java Backend Development", duration: "2 Months", icon: <CodeIcon /> },
+    { name: "UI/UX Design", duration: "2 Months", icon: <BrushIcon /> },
   ];
 
   return (
@@ -27,7 +51,7 @@ export default function Internship() {
             Launch Your IT Career With Us
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto leading-relaxed">
-            Our structured internship program is designed to transform fresh graduates into industry-ready 
+            Our structured internship program is designed to transform fresh graduates into industry-ready
             professionals through hands-on project experience.
           </p>
         </div>
@@ -51,7 +75,9 @@ export default function Internship() {
               {tracks.map((t) => (
                 <div key={t.name} className="bg-white rounded-xl p-5 border border-gray-100 flex items-center justify-between group hover:border-orange-200 transition-all">
                   <div className="flex items-center gap-4">
-                    <span className="text-2xl">{t.icon}</span>
+                    <div className="w-10 h-10 bg-orange-50 text-primary rounded-lg flex items-center justify-center shrink-0">
+                      {t.icon}
+                    </div>
                     <div>
                       <div className="font-semibold text-secondary text-sm">{t.name}</div>
                       <div className="text-gray-400 text-xs mt-0.5">Duration: {t.duration}</div>
