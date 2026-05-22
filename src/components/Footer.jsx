@@ -35,7 +35,9 @@ export default function Footer() {
               {["LinkedIn", "Twitter", "Instagram", "GitHub"].map((s) => (
                 <a
                   key={s}
-                  href="#"
+                  href={'https://' + s.toLowerCase() + '.com'}
+                  target="_blank"
+                  rel="noreferrer"
                   className="w-9 h-9 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-200 text-xs font-bold"
                   title={s}
                 >
@@ -116,8 +118,8 @@ export default function Footer() {
             © {new Date().getFullYear()} OMVSAB IT Solutions. All rights reserved.
           </p>
           <div className="flex gap-5">
-            <a href="#" className="text-gray-500 text-xs hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="#" className="text-gray-500 text-xs hover:text-primary transition-colors">Terms of Service</a>
+            <a href="/privacy" className="text-gray-500 text-xs hover:text-primary transition-colors">Privacy Policy</a>
+            <a href="/terms" className="text-gray-500 text-xs hover:text-primary transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>
