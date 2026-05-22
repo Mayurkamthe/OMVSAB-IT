@@ -24,8 +24,8 @@ export default function Header() {
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2 shrink-0">
           <img src={logo} alt="OMVSAB IT Solutions Logo" className="h-10 sm:h-12 w-auto object-contain" />
-          <div className="hidden sm:block">
-            <div className="font-heading font-bold text-secondary text-lg leading-tight">OMVSAB</div>
+          <div className="">
+            <div className="font-heading font-bold text-secondary text-base sm:text-lg leading-tight">OMVSAB</div>
             <div className="text-xs text-gray-500 tracking-wide leading-tight">IT Solutions</div>
           </div>
         </a>
