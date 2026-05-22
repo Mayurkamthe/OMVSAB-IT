@@ -1,4 +1,4 @@
-Import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 
 // Compact system prompt — contact details pulled from .env at build time
 const SYSTEM_PROMPT = `You are OMVA, AI assistant for OMVSAB IT Solutions.
