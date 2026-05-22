@@ -26,7 +26,7 @@ export default function Header() {
           <img src={logo} alt="OMVSAB IT Solutions Logo" className="h-10 sm:h-12 w-auto object-contain" />
           <div className="">
             <div className="font-heading font-bold text-secondary text-base sm:text-lg leading-tight">OM<span className="text-primary text-lg sm:text-xl">V</span>SAB</div>
-            <div className="text-xs text-gray-500 tracking-wide leading-tight">IT Solutions</div>
+            <div className="text-xs text-gray-500 tracking-wide leading-tight">IT Solutions <span className="text-primary font-semibold italic">— We Code your Requirements</span></div>
           </div>
         </a>
 
