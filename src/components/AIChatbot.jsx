@@ -14,7 +14,7 @@ const KB = [
   },
   {
     tags: ["internship", "intern", "training", "program", "batch", "enroll", "join", "apply", "course", "learn"],
-    reply: () => `Our Internship Program is designed to make you job-ready! 🎓\n\n📌 Training Tracks:\n• Full Stack Web Dev – 3 Months\n• Mobile App Dev – 3 Months\n• Java Backend Dev – 2 Months\n• UI/UX Design – 2 Months\n\n✅ What you get:\n• Live project experience\n• Industry mentor support\n• Internship certificate\n• Placement guidance\n• Modern tech: React, Node.js, Spring Boot, AWS\n\nReady to apply? Contact us at +91 98765 43210 or info@omvsab.com`,
+    reply: () => `Our Internship Program is designed to make you job-ready! 🎓\n\n📌 Training Tracks:\n• Full Stack Web Dev – 3 Months\n• Mobile App Dev – 3 Months\n• Java Backend Dev – 2 Months\n• UI/UX Design – 2 Months\n\n✅ What you get:\n• Live project experience\n• Industry mentor support\n• Internship certificate\n• Placement guidance\n• Modern tech: React, Node.js, Spring Boot, AWS\n\nReady to apply? Contact us at +91 9881681839 or hr@omvsabitsolution.in`,
   },
   {
     tags: ["placement", "placed", "job", "mnc", "company", "hired", "package", "salary", "lpa", "recruit", "tcs", "infosys", "wipro", "accenture", "capgemini", "hcl"],
@@ -22,7 +22,7 @@ const KB = [
   },
   {
     tags: ["contact", "phone", "email", "address", "location", "reach", "call", "whatsapp", "office", "pune"],
-    reply: () => `Here's how to reach us 📞\n\n📱 Phone: +91 98765 43210\n📧 Email: info@omvsab.com\n📍 Location: Pune, Maharashtra, India\n🕘 Hours: Mon–Sat, 9:00 AM – 7:00 PM\n\nYou can also fill the Contact Form on this page. We'll get back within 24 hours!`,
+    reply: () => `Here's how to reach us 📞\n\n📱 Phone: +91 9881681839\n📧 Email: hr@omvsabitsolution.in\n📍 Location: Pune, Maharashtra, India\n🕘 Hours: Mon–Sat, 9:00 AM – 7:00 PM\n\nYou can also fill the Contact Form on this page. We'll get back within 24 hours!`,
   },
   {
     tags: ["about", "who are you", "omvsab", "company", "founded", "team", "experience", "background"],
@@ -30,11 +30,11 @@ const KB = [
   },
   {
     tags: ["project", "projects", "portfolio", "work done", "case study", "live", "delivered"],
-    reply: () => `We've delivered 200+ projects across industries! 🚀\n\n🔧 Project Types:\n• Business web apps & portals\n• E-commerce platforms\n• Mobile apps (Android/iOS)\n• ERP & management systems\n• API development & integrations\n• Cloud-deployed SaaS products\n\nWe also have 10+ live projects currently in production.\n\nInterested in a custom project? Contact us at info@omvsab.com`,
+    reply: () => `We've delivered 200+ projects across industries! 🚀\n\n🔧 Project Types:\n• Business web apps & portals\n• E-commerce platforms\n• Mobile apps (Android/iOS)\n• ERP & management systems\n• API development & integrations\n• Cloud-deployed SaaS products\n\nWe also have 10+ live projects currently in production.\n\nInterested in a custom project? Contact us at hr@omvsabitsolution.in`,
   },
   {
     tags: ["price", "pricing", "cost", "fee", "fees", "charge", "how much", "budget", "affordable", "rate"],
-    reply: () => `Our programs and services are very affordable! 💰\n\nFor exact pricing:\n📱 Call: +91 98765 43210\n📧 Email: info@omvsab.com\n\nWe customize quotes based on your requirements. No hidden charges — transparent pricing always.`,
+    reply: () => `Our programs and services are very affordable! 💰\n\nFor exact pricing:\n📱 Call: +91 9881681839\n📧 Email: hr@omvsabitsolution.in\n\nWe customize quotes based on your requirements. No hidden charges — transparent pricing always.`,
   },
   {
     tags: ["certificate", "certification", "certified", "proof", "document"],
@@ -46,25 +46,25 @@ const KB = [
   },
   {
     tags: ["duration", "how long", "time", "months", "weeks", "days", "period"],
-    reply: () => `Program durations:\n\n⏱️ Internship Tracks:\n• Full Stack Web Dev – 3 Months\n• Mobile App Dev – 3 Months\n• Java Backend Dev – 2 Months\n• UI/UX Design – 2 Months\n\nProject delivery timelines vary based on scope. We'll give you a detailed timeline during consultation.\n\nWant to enroll? Contact: +91 98765 43210`,
+    reply: () => `Program durations:\n\n⏱️ Internship Tracks:\n• Full Stack Web Dev – 3 Months\n• Mobile App Dev – 3 Months\n• Java Backend Dev – 2 Months\n• UI/UX Design – 2 Months\n\nProject delivery timelines vary based on scope. We'll give you a detailed timeline during consultation.\n\nWant to enroll? Contact: +91 9881681839`,
   },
   {
     tags: ["fresher", "graduate", "student", "college", "btech", "be", "mca", "bca", "degree", "eligible"],
-    reply: () => `Great news — freshers are welcome! 🎓\n\n✅ Eligibility:\n• Any CS/IT/Engineering student\n• BCA, MCA, B.Tech, BE graduates\n• Basic programming knowledge is enough\n• No prior work experience required\n\nWe train you from fundamentals to job-ready level through live projects and mentorship.\n\nApply today: info@omvsab.com`,
+    reply: () => `Great news — freshers are welcome! 🎓\n\n✅ Eligibility:\n• Any CS/IT/Engineering student\n• BCA, MCA, B.Tech, BE graduates\n• Basic programming knowledge is enough\n• No prior work experience required\n\nWe train you from fundamentals to job-ready level through live projects and mentorship.\n\nApply today: hr@omvsabitsolution.in`,
   },
   {
     tags: ["thank", "thanks", "great", "awesome", "nice", "helpful", "good", "perfect", "ok", "okay", "alright"],
-    reply: () => `You're welcome! 😊\n\nFeel free to ask anything else about OMVSAB. I'm here to help!\n\n📱 +91 98765 43210\n📧 info@omvsab.com`,
+    reply: () => `You're welcome! 😊\n\nFeel free to ask anything else about OMVSAB. I'm here to help!\n\n📱 +91 9881681839\n📧 hr@omvsabitsolution.in`,
   },
   {
     tags: ["bye", "goodbye", "see you", "later", "exit", "close", "quit"],
-    reply: () => `Thanks for visiting OMVSAB IT Solutions! 👋\n\nDon't hesitate to reach out anytime:\n📱 +91 98765 43210\n📧 info@omvsab.com\n\nWe Code Your Requirements — see you soon! 🚀`,
+    reply: () => `Thanks for visiting OMVSAB IT Solutions! 👋\n\nDon't hesitate to reach out anytime:\n📱 +91 9881681839\n📧 hr@omvsabitsolution.in\n\nWe Code Your Requirements — see you soon! 🚀`,
   },
 ];
 
 const FALLBACK_REPLIES = [
-  `I'm not sure about that specifically, but I can help with:\n\n• Our IT Services\n• Internship Programs\n• Placement Records\n• Contact Information\n\nOr reach us directly:\n📱 +91 98765 43210\n📧 info@omvsab.com`,
-  `Great question! For detailed information, please contact our team:\n📱 +91 98765 43210\n📧 info@omvsab.com\n\nMeanwhile, try asking about our services, internships, or placement record!`,
+  `I'm not sure about that specifically, but I can help with:\n\n• Our IT Services\n• Internship Programs\n• Placement Records\n• Contact Information\n\nOr reach us directly:\n📱 +91 9881681839\n📧 hr@omvsabitsolution.in`,
+  `Great question! For detailed information, please contact our team:\n📱 +91 9881681839\n📧 hr@omvsabitsolution.in\n\nMeanwhile, try asking about our services, internships, or placement record!`,
   `I'd love to help! Could you rephrase that? Or ask about:\n• Services we offer\n• Internship program details\n• Placement statistics\n• How to contact us`,
 ];
 

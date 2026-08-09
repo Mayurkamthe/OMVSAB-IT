@@ -99,7 +99,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white border-opacity-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-gray-500 text-xs">© {new Date().getFullYear()} OMVSAB IT Solutions. All rights reserved.</p>
+          <p className="text-gray-500 text-xs">© 2008–{new Date().getFullYear()} Omvsab IT Solution. All Rights Reserved.</p>
           <div className="flex gap-5">
             <a href="/privacy" className="text-gray-500 text-xs hover:text-primary transition-colors">Privacy Policy</a>
             <a href="/terms" className="text-gray-500 text-xs hover:text-primary transition-colors">Terms of Service</a>
