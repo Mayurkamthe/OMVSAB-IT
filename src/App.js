@@ -2,8 +2,8 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
-import Internship from "./components/Internship";
-import Placement from "./components/Placement";
+import Portfolio from "./components/Placement";
+import Process from "./components/Internship";
 import WhyUs from "./components/WhyUs";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
@@ -19,8 +19,8 @@ function App() {
         <Hero />
         <About />
         <Services />
-        <Internship />
-        <Placement />
+        <Portfolio />
+        <Process />
         <WhyUs />
         <Testimonials />
         <Contact />

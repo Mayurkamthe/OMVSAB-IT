@@ -12,7 +12,7 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const navLinks = ["Home", "About", "Services", "Internship", "Placement", "Contact"];
+  const navLinks = ["Home", "About", "Services", "Portfolio", "Process", "Contact"];
 
   return (
     <header
